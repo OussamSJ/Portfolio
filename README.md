@@ -25,9 +25,7 @@ Bienvenue sur mon portfolio de développeur ! Ce projet a pour but de présenter
 
 ## Technologies utilisées
 
-- Frontend : `HTML`, `CSS`, `JavaScript` / `React` / `tailwind css` *(à adapter selon ton stack)*
-- Autres : `Git`, `GitHub Pages` *(si déployé)*
-
+`HTML`, `CSS`, `JavaScript` / `React` / `tailwind css` 
 ---
 
 ## Installation
