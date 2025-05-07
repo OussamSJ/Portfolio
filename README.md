@@ -1,18 +1,18 @@
-# 🧑‍💻 Portfolio – Oussama Seyid Jebari
+# Portfolio – Oussama Seyid Jebari
 
 Bienvenue sur mon portfolio de développeur ! Ce projet a pour but de présenter mes compétences, mes projets réalisés et mes expériences, dans une interface claire, moderne et responsive.
 
 ---
 
-## 🔍 Aperçu
+## Aperçu
 
 <img src="screenshot.png" alt="Aperçu du portfolio" width="600" />
 
-> ✨ Un site portfolio personnel développé avec React.
+>  Un site portfolio personnel développé avec React.
 
 ---
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
 - Page d’accueil avec présentation rapide
 - Section projets (avec liens vers GitHub ou démonstrations)
@@ -23,14 +23,14 @@ Bienvenue sur mon portfolio de développeur ! Ce projet a pour but de présenter
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 - Frontend : `HTML`, `CSS`, `JavaScript` / `React` / `tailwind css` *(à adapter selon ton stack)*
 - Autres : `Git`, `GitHub Pages` *(si déployé)*
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Clone le dépôt
