@@ -31,8 +31,8 @@ const Footbar = () => {
       <div class="card-body">
         <h4 class="card-title">Suivez-moi</h4>
         <ul class="social-links">
-        <li><a href="https://github.com/OussamSJ#"> <img  src="github.svg"  alt="GitHub"></img></a></li>
-        <li><a href="https://www.linkedin.com/in/oussama-sj/  "> <img src="linkedin.svg" alt="LinkedIn"></img></a></li>
+        <li><a href="#"> <img  src="github.svg"  alt="GitHub"></img></a></li>
+        <li><a href="#"> <img src="linkedin.svg" alt="LinkedIn"></img></a></li>
         <li><a href="https://www.instagram.com/oussama.sj/"> <img src="instagram.svg" alt="Instagram"></img></a></li>
       </ul>
       </div>
