@@ -26,20 +26,20 @@ const Home = () => {
   return (
     <div className="Home">
       <Navbar />
-      <div className="flex items-center mt-10 justify-between bg-gradient-to-r from-indigo-600 to-blue-800 text-white p-12 flex-wrap">
+      <div className="flex items-center justify-between bg-gradient-to-r from-indigo-600 to-blue-800 text-white p-12 flex-wrap">
 
 {/* Partie gauche */}
 <div className="flex flex-col items-start space-y-4 max-w-md">
-  <h3 className="text-xl text-white font-semibold">Oussama SEYID JEBARI</h3>
-  <h3 className="text-lg text-white">Développeur Logiciel</h3>
-  <div className="w-200 h-200 mt-4 ml-20">
+  <h3 className="text-xl font-semibold">Oussama SEYID JEBARI</h3>
+  <h3 className="text-lg"><span>Développeur Logiciel</span></h3>
+  <div className="w-60 h-60 mt-4 ml-6">
     <img src="oussama_img.png" alt="photo de profil" className="rounded-lg object-cover w-full h-full" />
   </div>
 </div>
 
 {/* Partie droite */}
-<div className="text-right max-w-md mt-10 md:mt-30">
-  <h1 className="text-4xl text-white font-bold mb-6 leading-tight">
+<div className="text-right max-w-md mt-10 md:mt-0">
+  <h1 className="text-4xl font-bold mb-6 leading-tight">
     Bienvenue sur <br /> mon Portfolio
   </h1>
   <button className="bg-white text-blue-700 font-bold py-2 px-6 rounded shadow hover:bg-gray-100 transition">

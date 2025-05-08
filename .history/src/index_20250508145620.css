@@ -97,8 +97,27 @@ justify-self: right;
 
 
 
+.presentation strong {
+  color: aliceblue;
+  font-size: 3.5rem;
+  font-family: 'Agrandir Grand', sans-serif; /* une police futuriste */
+}
 
-
+.button {
+justify-content: center;
+  margin-top: 20px;
+  padding: 10px 30px;
+ margin-right: 50px;
+  font-size: 1rem;
+  background-color: white;
+  color: #003b9e;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Agrandir Grand', sans-serif;
+}
 
 
 .portfolio-footer {
