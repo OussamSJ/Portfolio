@@ -8,7 +8,7 @@ export default function Projet1() {
         <div className="relative max-w-6xl mx-auto py-auto px-auto mt-10 mb-10">
             <h1 className="text-3xl font-bold mb-8 text-center p-8">Project management tool</h1>
             <Card>
-                <Card.Img variant="top" src="logo192.png" />
+                <Card.Img variant="top" src="/public/logo192.png" />
                 <Card.Body>
                     <Card.Text>
                         <p className="text-gray-700 text-2xl p-10  mg-auto ">
@@ -33,6 +33,8 @@ export default function Projet1() {
                 </Card.Body>
             </Card>
             <br />
+
+
         </div>
     );
 }
