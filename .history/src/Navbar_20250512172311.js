@@ -63,7 +63,7 @@ class Navbar extends Component {
           width='thin'
           direction='right'
           style={{ backgroundColor: '#3b3737'}}
-          onHide={this.toggleSidebar}
+          onHide={this.toggleSidebar = false}
 
         >
           <MenuItem as="a" href="/" onClick={this.toggleSidebar}>Accueil</MenuItem>

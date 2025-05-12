@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 export default function FormationComponent({ titre, ecole, date, image, index }) {
   const isRight = index % 2 === 0;
 
-  {/* animation avec motion  */ }
+   {/* animation avec motion  */}
   return (
+    
     <motion.div
       className={`relative mb-20  border-primary transform -translate-x-1/2
         ${isRight ? "pl-10 border-l-2 text-left mr-auto" : "pr-10 border-r-2 text-right justify-start ml-auto"}
@@ -14,10 +15,10 @@ export default function FormationComponent({ titre, ecole, date, image, index })
       transition={{ delay: index * 2, duration: 1 }}
       viewport={{ once: true }}
     >
-      <div className={`absolute top-0 left-1/2 right-1/2 w-6 h-6 bg-white rounded-full border-2 transform -translate-x-1/2 border-primary hidden sm:block`} />
-      <p className="text-2sm text-gray-500 mx-auto">{date}</p>
+      <div className={`absolute top-0 left-1/2 right-1/2  w-6 h-6   bg-white rounded-full border-2 transform -translate-x-1/2 border-primary`} />
+      <p className="text-2sm text-gray-500  mx-auto ">{date}</p>
       <h3 className="text-xl font-semibold">{ecole}</h3>
-      <img src={image} alt="entreprise" className={`w-16 h-16 ${isRight ? "ml-2" : "mr-2"} rounded-full mt-2 mx-auto`} />
+      <img src={image} alt="entreprise" className={`w-16 h-16  ${isRight ? "ml-2" : "mr-2"} rounded-full mt-2 mx-auto`} />
       <p className="text-2xl bold text-gray-600">{titre}</p>
       <br />
     </motion.div>

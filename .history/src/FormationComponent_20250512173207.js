@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function FormationComponent({ titre, ecole, date, image, index }) {
   const isRight = index % 2 === 0;
 
-  {/* animation avec motion  */ }
+   {/* animation avec motion  */}
   return (
     <motion.div
       className={`relative mb-20  border-primary transform -translate-x-1/2

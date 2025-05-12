@@ -27,6 +27,7 @@ export default function Formation() {
   return (
 
     <div>
+    /* Titre  */
     <h1 className="text-3xl font-bold mb-8 text-center p-8">Mes Formations</h1>
     <div className="relative max-w-6xl mx-auto py-auto px-auto mt-20 mb-20">
 
