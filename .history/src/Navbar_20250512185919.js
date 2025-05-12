@@ -30,7 +30,7 @@ class Navbar extends Component {
           <div className="links desktop-only">
             <Menu secondary>
               <MenuItem name='accueil' active={activeItem === 'accueil'} onClick={this.handleItemClick} as="a" href="/" />
-              <MenuItem name='projets' active={activeItem === 'projets'} onClick={this.handleItemClick} as="a" href="/projet" />
+              <MenuItem name='projet' active={activeItem === 'projet'} onClick={this.handleItemClick} as="a" href="/projets" />
               <MenuItem name='formation' active={activeItem === 'formation'} onClick={this.handleItemClick} as="a" href="/formation" />
               <MenuItem name='expériences' active={activeItem === 'expériences'} onClick={this.handleItemClick} as="a" href="/experiences-professionnelle" />
               <MenuItem name='cv' active={activeItem === 'cv'} onClick={this.handleItemClick} as="a" href="/cv" />

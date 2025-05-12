@@ -8,7 +8,6 @@ import Footbar from './Footbar';
 import Experiences from './Experiences';
 import Formation from './Formation';
 import Projet from './Projet';
-import Projet1 from './Projet1';
 
 function App() {
   return (
@@ -20,8 +19,7 @@ function App() {
             <Route path="/cv" element={<Cv />} />
             <Route path="/experiences-professionnelle" element={<div ><Navbar /> <Experiences /><Footbar /></div>} />
             <Route path="/formation" element={<div ><Navbar /> <Formation /><Footbar /></div>} />
-            <Route path="/projet" element={<div ><Navbar /> <Projet /><Footbar /></div>} />
-            <Route path="/projet/1" element={<div ><Navbar /> <Projet1 /><Footbar /></div>} />
+            <Route path="/projets" element={<div ><Navbar /> <Projet /><Footbar /></div>} />
             <Route path="*" element={
               <div >
                 <Navbar />

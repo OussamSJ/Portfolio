@@ -7,17 +7,21 @@ import Cv from './Cv'; // Si vous avez une page de CV
 import Footbar from './Footbar';
 import Experiences from './Experiences';
 import Formation from './Formation';
+import Projet from './Projet';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App" onClick={this.handleItemClick}>
+      <div className="App">
         <div className='content'>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/cv" element={<Cv />} />
-            <Route path="/experiences-professionnelle" element={<div ><Navbar/> <Experiences /><Footbar/></div>} />
-            <Route path="/formation" element={<div ><Navbar/> <Formation /><Footbar/></div>} />
+            <Route path="/experiences-professionnelle" element={<div ><Navbar /> <Experiences /><Footbar /></div>} />
+            <Route path="/formation" element={<div ><Navbar /> <Formation /><Footbar /></div>} />
+            <Route path="/projets" element={<div ><Navbar /> <Projet /><Footbar /></div>} />
+            <Route path="/projets" element={<div ><Navbar /> <Projet1/><Footbar /></div>} />
+            
             <Route path="*" element={
               <div >
                 <Navbar />
