@@ -1,4 +1,5 @@
-
+// pages/Formations.jsx
+import { div, i } from "framer-motion/client";
 import ProjetComponent from "./ProjetComponent";
 import Card from 'react-bootstrap/Card';
 import { projets } from "./Projet";
@@ -18,7 +19,7 @@ export default function Projet1() {
                             Vous pouvez consulter le code source sur mon profil GitHub, ou cliquer sur chaque carte projet pour plus de détails.
                         </p>
                         <p className="text-gray-700 font-bold text-3xl mb-20 mg-auto">
-                            voir les autres projets :
+                            voir l'ensemble de mes projets :
                         </p>
 
                         {/*   Projets */}

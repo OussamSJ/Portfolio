@@ -69,7 +69,7 @@ class Navbar extends Component {
 
         >
           <MenuItem as="a" href="/" onClick={this.toggleSidebar}>Accueil</MenuItem>
-          <MenuItem as="a" href="/projet" onClick={this.toggleSidebar}>Projets</MenuItem>
+          <MenuItem as="a" href="/projets" onClick={this.toggleSidebar}>Projets</MenuItem>
           <MenuItem as="a" href="/formation" onClick={this.toggleSidebar}>Formation</MenuItem>
           <MenuItem as="a" href="/experiences-professionnelle" onClick={this.toggleSidebar}>Expériences</MenuItem>
           <MenuItem as="a" href="/cv" onClick={this.toggleSidebar}>CV</MenuItem>

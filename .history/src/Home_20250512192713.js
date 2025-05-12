@@ -34,7 +34,7 @@ const Home = () => {
           <h3 className="text-xl text-white font-semibold">Oussama SEYID JEBARI</h3>
           <h3 className="text-lg text-white">Développeur Logiciel</h3>
           <div className="w-200 h-200 mt-4 ml-20">
-            <img src="oussama_img.png" alt="photo_de_profil" className="rounded-lg object-cover w-full h-full" />
+            <img src="oussama_img.png" alt="photo de profil" className="rounded-lg object-cover w-full h-full" />
           </div>
         </div>
 

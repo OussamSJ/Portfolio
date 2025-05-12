@@ -1,4 +1,5 @@
-
+// pages/Formations.jsx
+import { div, i } from "framer-motion/client";
 import ProjetComponent from "./ProjetComponent";
 import Card from 'react-bootstrap/Card';
 import { projets } from "./Projet";
@@ -8,7 +9,7 @@ export default function Projet1() {
         <div className="relative max-w-6xl mx-auto py-auto px-auto mt-10 mb-10">
             <h1 className="text-3xl font-bold mb-8 text-center p-8">Project management tool</h1>
             <Card>
-                <Card.Img variant="top" src="logo-pmt.png" />
+                <Card.Img variant="top" src={{projets[1].image}} />   
                 <Card.Body>
                     <Card.Text>
                         <p className="text-gray-700 text-2xl p-10  mg-auto ">

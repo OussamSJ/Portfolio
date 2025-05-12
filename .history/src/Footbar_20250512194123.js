@@ -23,7 +23,6 @@ const Footbar = () => {
           <li><a href="/">Accueil</a></li>
           <li><a href="/projet">Projet</a></li>
           <li><a href="/cv">CV</a></li>
-          <li><a href="/formation">Formations</a></li>
           
           </ul>
         </div>

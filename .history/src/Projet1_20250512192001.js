@@ -1,4 +1,5 @@
-
+// pages/Formations.jsx
+import { div, i } from "framer-motion/client";
 import ProjetComponent from "./ProjetComponent";
 import Card from 'react-bootstrap/Card';
 import { projets } from "./Projet";
