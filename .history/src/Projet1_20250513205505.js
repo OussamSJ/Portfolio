@@ -35,6 +35,9 @@ export default function Projet1() {
                     Le code source complet est accessible sur le lien GitHub ci-dessous. Ce projet reflète mon expertise en développement full-stack moderne et ma capacité à concevoir des solutions professionnelles, sécurisées et orientées utilisateur.
                 </p>
 
+
+
+
                         <p className="text-gray-700 font-bold text-3xl  mg-auto">
                             Lien pour Github :
                         </p>

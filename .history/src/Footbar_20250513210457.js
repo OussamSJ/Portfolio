@@ -37,7 +37,7 @@ const Footbar = () => {
           <ul className="social-links">
           <li><a href="https://github.com/OussamSJ"> <img src="/github.svg" alt="GitHub"></img></a></li>
           <li><a href="https://www.linkedin.com/in/oussama-sj/"> <img src="/linkedin.svg" alt="LinkedIn"></img></a></li>
-          <li><a href="https://www.instagram.com/oussama.sj/"> <img  src="/instagram.svg" alt="Instagram"></img></a></li>
+          <li><a href="https://www.instagram.com/oussama.sj/"> <img  src="/instagram.svg" alt="Instagram" style={{ justifyContent:'left',  width: '37px', height: '37px' }}></img></a></li>
           </ul>
         </div>
         </div>

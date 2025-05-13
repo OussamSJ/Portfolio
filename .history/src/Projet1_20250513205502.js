@@ -31,9 +31,10 @@ export default function Projet1() {
                 <p className="text-gray-700 text-2xl p-10  mg-auto ">
                     Ce projet met également en avant une architecture modulaire, une gestion sécurisée des accès, et une scalabilité assurée par une conception pensée et testée pour l’extension (Docker-ready, CI/CD avec GitHub Actions). Le design épuré et responsive rend l'application accessible sur tous les types d’appareils, du desktop au mobile.
                 </p>
-                <p className="text-gray-700 text-2xl p-10  mg-auto ">
-                    Le code source complet est accessible sur le lien GitHub ci-dessous. Ce projet reflète mon expertise en développement full-stack moderne et ma capacité à concevoir des solutions professionnelles, sécurisées et orientées utilisateur.
-                </p>
+                <p className="text-gray-700 text-2xl p-10  mg-auto "></p>
+
+
+
 
                         <p className="text-gray-700 font-bold text-3xl  mg-auto">
                             Lien pour Github :
