@@ -3,9 +3,6 @@ import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 import Navbar from "./Navbar";
 import Footbar from "./Footbar";
-import ProjetComponent from "./projets/ProjetComponent";
-import {projets} from "./projets/Projet";
-
 
 
 const Home = () => {
@@ -52,8 +49,8 @@ const Home = () => {
         </div>
 
       </div>
-      <h2 className="text-4xl font-bold mb-8 text-center mt-20 ">À propos de moi</h2>
       <section className="bg-white text-gray-800 p-8 rounded-lg shadow-md my-8 w-full h-full mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-8 ">À propos de moi</h2>
         <p className="text-xl mb-6">
           Je suis Oussama,  <strong>Développeur passionné par les technologies émergentes</strong>, à la recherche de projets innovants où impact et excellence technique se rencontrent.<br />
           Toujours en veille sur les dernières avancées <strong>tech</strong>, je m’épanouis dans les environnements dynamiques où les défis techniques sont une opportunité d’apprendre, d’innover et de progresser.
@@ -63,38 +60,6 @@ const Home = () => {
           Discutons ensemble si vous recherchez un profil technique <strong>curieux, rigoureux et motivé à relever de nouveaux défis !</strong>
         </p>
       </section>
-
-      <h2 className="text-4xl font-bold mb-4 text-center mt-20 ">Mes Compétences</h2>
-      <section className="my-12 ">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div className="p-4 bg-gray-100 rounded shadow">React</div>
-          <div className="p-4 bg-gray-100 rounded shadow">Java</div>
-          <div className="p-4 bg-gray-100 rounded shadow">Spring Boot</div>
-          <div className="p-4 bg-gray-100 rounded shadow">SQL</div>
-
-        </div>
-      </section>
-
-      <section className="my-12 px-4">
-        <h2 className="text-2xl font-bold text-center mb-6">Mes projets récents</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow">
-            <h3 className="text-xl font-semibold">Gestion de projets (PMT)</h3>
-            <p className="text-sm mt-2">Application Angular + Spring Boot pour gérer les projets d'une entreprise.</p>
-            <a href="https://github.com/OussamSJ/Angular-PMT-FrontEnd" target="_blank" className="text-blue-500 underline mt-2 inline-block">Voir sur GitHub</a>
-          </div>
-          {/* Répète pour d'autres projets */}
-        </div>
-      </section>
-
-      {/*   Projets */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projets
-          .sort(() => Math.random() - 0.5)
-          .map((pr, index) => (
-            <ProjetComponent key={index} index={index} {...pr} />
-          ))}
-      </div>
 
 
 

@@ -4,7 +4,7 @@ import BlogList from "./BlogList";
 import Navbar from "./Navbar";
 import Footbar from "./Footbar";
 import ProjetComponent from "./projets/ProjetComponent";
-import {projets} from "./projets/Projet";
+import Projets from "./projets/Projet";
 
 
 

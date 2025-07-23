@@ -3,9 +3,6 @@ import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 import Navbar from "./Navbar";
 import Footbar from "./Footbar";
-import ProjetComponent from "./projets/ProjetComponent";
-import {projets} from "./projets/Projet";
-
 
 
 const Home = () => {
