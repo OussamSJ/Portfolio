@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 import Home from './Home';
-import Navbar from './Navbar'; 
-import Cv from './Cv'; 
+import Navbar from './Navbar'; // Si vous avez une barre de navigation
+import Cv from './Cv'; // Si vous avez une page de CV
 import Footbar from './Footbar';
 import Experiences from './Experiences';
 import Formation from './Formation';
 import Projet from './Projet';
 import Projet1 from './Projet1';
-import ProjetFootballPlayerSearch from './ProjetFootballPlayerSearch'; 
+import Projet_Football_Player_Search from './Projet_Football_Player_Search';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
             <Route path="/formation" element={<div ><Navbar /> <Formation /><Footbar /></div>} />
             <Route path="/projet" element={<div ><Navbar /> <Projet /><Footbar /></div>} />
             <Route path="/projet/1" element={<div ><Navbar /> <Projet1 /><Footbar /></div>} />
-             <Route path="/projet/2" element={<div ><Navbar /> <ProjetFootballPlayerSearch /><Footbar /></div>} />
+             <Route path="/projet/2" element={<div ><Navbar /> <Projet_Football_Player_Search /><Footbar /></div>} />
             <Route path="*" element={
               <div >
                 <Navbar />

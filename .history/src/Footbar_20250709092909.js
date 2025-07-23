@@ -1,4 +1,3 @@
-import { color } from "framer-motion";
 
 const Footbar = () => {
   return (
@@ -19,7 +18,7 @@ const Footbar = () => {
         <div className="card">
         <div className="card-body">
           <h4 className="card-title">Liens utiles</h4>
-          <ul className="social-links" style={{ color: '#3b3737'}}>
+          <ul className="social-links" style={{ color : '#212020' }}>
 
           <li><a href="/">Accueil</a></li>
           <li><a href="/projet">Projet</a></li>

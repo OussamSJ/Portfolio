@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import Navbar from './Navbar'; 
-import Cv from './Cv'; 
+import Navbar from './Navbar'; // Si vous avez une barre de navigation
+import Cv from './Cv'; // Si vous avez une page de CV
 import Footbar from './Footbar';
 import Experiences from './Experiences';
 import Formation from './Formation';
 import Projet from './Projet';
 import Projet1 from './Projet1';
-import ProjetFootballPlayerSearch from './ProjetFootballPlayerSearch'; 
+import Projet_Football_Player_Search from './ProjetFootballPlayerSearch';
 
 function App() {
   return (

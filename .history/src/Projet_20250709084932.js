@@ -15,7 +15,7 @@ export  const projets= [
         titre: 'Football Player Search',
         description: 'une application mobile Android développée avec Kotlin.',
         description_longue: 'une application mobile Android conçue pour offrir une recherche intuitive et rapide d’informations sur les joueurs de football du monde entier.',
-        image: '/logo-pmt.png',
+        image: '/images/api.png',
     },
     {
         id: '3',
