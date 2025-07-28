@@ -111,33 +111,26 @@ const Home = () => {
         <div className="relative top-1/2 w-1/3 mx-auto mb-10 h-0.5 bg-primary transform -translate-y-1/2 z-0 hidden sm:block" />
 
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { nom: "Français", niveau: "Courant", pourcentage: 100 },
-            { nom: "Anglais", niveau: "Professionnel", pourcentage: 70 },
-            { nom: "Arabe", niveau: "Langue maternelle", pourcentage: 100 },
-            { nom: "Espagnol", niveau: "Notions", pourcentage: 20},
-          ]
-            .map((langue, index) => (
-              <motion.div
-                key={langue.nom}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white p-6 rounded-lg"
-  >
-                <p className="text-xl font-semibold text-center">{langue.nom}</p>
-                <p className="text-sm text-center mt-1 text-gray-600">{langue.niveau}</p>
-
-                {/* Barre de progression */}
-                <div className="mt-4 w-full h-2 rounded-full bg-gray-200">
-                  <div
-                    className="h-full bg-primary rounded-full transition-all duration-500"
-                    style={{ width: `${langue.pourcentage}%` }}
-                  />
-                </div>
-              </motion.div>
-            ))}
+          {
+            [
+              { nom: "Français", niveau: "Langue maternelle" },
+              { nom: "Anglais", niveau: "Courant" },
+              { nom: "Arabe", niveau: "Courant" },
+              { nom: "Espagnol", niveau: "Notions" },
+            ]
+              .map((langue, index) => (
+                <motion.div
+                  key={langue.nom}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white p-6 rounded-lg shadow hover:bg-primary/10 transition duration-300"
+                >
+                  <p className="text-xl font-semibold text-center">{langue.nom}</p>
+                  <p className="text-sm text-center mt-2 text-gray-600">{langue.niveau}</p>
+                </motion.div>
+              ))}
         </div>
       </section>
 

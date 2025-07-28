@@ -124,15 +124,15 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white p-6 rounded-lg"
-  >
+                className="bg-white p-6 rounded-lg  hover:bg-primary/10 transition duration-300"
+              >
                 <p className="text-xl font-semibold text-center">{langue.nom}</p>
                 <p className="text-sm text-center mt-1 text-gray-600">{langue.niveau}</p>
 
                 {/* Barre de progression */}
                 <div className="mt-4 w-full h-2 rounded-full bg-gray-200">
                   <div
-                    className="h-full bg-primary rounded-full transition-all duration-500"
+                    className="h-full bg-primary rounded-full transition-all "
                     style={{ width: `${langue.pourcentage}%` }}
                   />
                 </div>
