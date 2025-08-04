@@ -147,96 +147,55 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="my-20 px-4 text-white ">
+      <section className="my-12 px-4 text-white">
         <h2 className="text-4xl font-bold mb-4 text-center mt-20">Contactez-moi</h2>
         <div className="relative top-1/2 w-1/3 mx-auto mb-10 h-0.5 bg-primary transform -translate-y-1/2 z-0 hidden sm:block" />
-        <div className="max-w mx-auto bg-gray-100 p-8 rounded-lg shadow-md text-gray-800">
-          <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md text-gray-800 ">
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-xl font-medium mb-2">Nom</label>
-              <input
-                type="text"
-                id="firstname"
-                name="firstname"
-                maxLength="100"
-                required
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
 
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-xl font-medium mb-2">Prénom</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                maxLength="100"
-                required
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
+        <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md text-gray-800">
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-sm font-medium mb-2">Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </div>
 
-            <div className="mb-4">
-              <label htmlFor="phone" className="block text-xl font-medium mb-2">Tél.</label>
-              <input
-                type="tel"
-                id="téléphone"
-                name="téléphone"
-                placeholder="Ex: +33 6 12 34 56 78"
-                pattern="^(+[0-1000])[1-9](\s?\d{2}){4}$"
-                title="Entrez un numéro valide : 06 12 34 56 78 ou +33612345678"
-                required
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </div>
 
-            <div className="mb-4">
-              <label htmlFor="email" className="block text-xl font-medium mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                title="Entrez une adresse email valide"
-                required
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
+          <div className="mb-4">
+            <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+            ></textarea>
+          </div>
 
-            <div className="mb-4">
-              <label htmlFor="subject" className="block text-xl font-medium mb-2">Sujet</label>
-              <input
-                type="text"
-                id="sujet"
-                name="sujet"
-                maxLength="200"
-                required
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
-
-            <div className="mb-4">
-              <label htmlFor="message" className="block text-xl font-medium mb-2">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Écrivez votre message ici..."
-                rows="5"
-                maxLength="2000"
-                required
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              ></textarea>
-            </div>
-
-            <button
-              type="submit"
-              className="bg-primary text-white font-bold py-2 px-6 rounded hover:bg-blue-900 transition-colors duration-300"
-            >
-              Envoyer
-            </button>
-          </form>
-        </div>
+          <button
+            type="submit"
+            className="bg-primary text-white font-bold py-2 px-6 rounded hover:bg-blue-900 transition-colors duration-300"
+          >
+            Envoyer
+          </button>
+        </form>
       </section>
+
+
+
 
       <Footbar />
     </div>
