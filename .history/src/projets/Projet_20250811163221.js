@@ -19,10 +19,10 @@ export const projets = [
     },
     {
         id: '3',
-        titre: 'Machine Learning - Prédire le Prix de Vente immobilier',
-        description: 'Modèle de maching learning conçu pour anticiper les tendances du marché immobilier.',
-        description_longue: 'Améliorer la précision des estimations afin d’aider à la prise de décision pour la mise en vente, optimiser les marges, et anticiper les tendances du marché immobilier. Ce projet illustre mes compétences en machine learning, mon savoir-faire en manipulation de données complexes, et ma capacité à transformer des insights en solutions concrètes.',
-        image: '/machine_learning.png',
+        titre: 'API Node.js',
+        description: 'API REST sécurisée pour la gestion de produits.',
+        description_longue: 'Cette API permet de gérer les produits d\'une boutique en ligne, avec des fonctionnalités de création, lecture, mise à jour et suppression (CRUD). Elle est sécurisée avec JWT et utilise MongoDB pour le stockage des données.',
+        image: '/images/api.png',
     },
     {
         id: '4',
@@ -35,10 +35,10 @@ export const projets = [
 
 export default function Projet() {
     return (
-        <div className="relative max-w-6xl mx-auto py-auto px-auto mt-10 mb-10">
+        <div className="relative max-w mx-auto py-auto px-auto mt-10 mb-10">
             <h1 className="text-3xl font-bold mb-8 text-center p-8">Mes Projets</h1>
             <Card>
-                <Card.Img variant="top" className=" w-200 h-80 mx-auto" src="couverture-portfolio.png" />
+                <Card.Img variant="top" src="couverture-portfolio.png" />
                 <Card.Body>
                     <Card.Text>
                         <p className="text-gray-700 text-2xl p-10  mg-auto ">

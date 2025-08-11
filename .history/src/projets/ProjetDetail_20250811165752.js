@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { projets } from "./Projet";
 import Projet1 from "./Projet1";
 import ProjetFootballPlayerSearch from  "./ProjetFootballPlayerSearch";
-import Projet3 from "./Projet3";
 
 export default function ProjetDetail() {
   const { id } = useParams();
@@ -13,7 +12,7 @@ export default function ProjetDetail() {
   switch (id) {
     case '1': return <Projet1 />;
     case '2': return <ProjetFootballPlayerSearch />;
-    case '3': return <Projet3/>;
+    case '3': return <projetMachineLearningPrixDeVente />;
     // Ajoute d'autres cas selon les projets
     default: return <div>Projet non défini</div>;
   }

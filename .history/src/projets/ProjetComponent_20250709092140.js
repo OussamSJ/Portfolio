@@ -5,7 +5,7 @@ export default function ProjetComponent({ id, titre,  image, description, descri
 
 
   return (
-    <div className="border  shadow p-4 max-w-sm">
+    <div className="border rounded-xl shadow p-4 max-w-sm">
     <img src={image} alt={titre} className="w-full h-40 object-cover rounded-md" />
     <h3 className="text-xl font-bold mt-2">{titre}</h3>
     <p className="text-sm text-gray-600">{description}</p>

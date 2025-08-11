@@ -20,7 +20,7 @@ export const projets = [
     {
         id: '3',
         titre: 'Machine Learning - Prédire le Prix de Vente immobilier',
-        description: 'Modèle de maching learning conçu pour anticiper les tendances du marché immobilier.',
+        description: 'Modèle de maching learning conçu pour améliorer la précision des estimations afin d’aider à la prise de décision pour anticiper les tendances du marché immobilier.',
         description_longue: 'Améliorer la précision des estimations afin d’aider à la prise de décision pour la mise en vente, optimiser les marges, et anticiper les tendances du marché immobilier. Ce projet illustre mes compétences en machine learning, mon savoir-faire en manipulation de données complexes, et ma capacité à transformer des insights en solutions concrètes.',
         image: '/machine_learning.png',
     },
