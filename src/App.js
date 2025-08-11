@@ -8,8 +8,7 @@ import Experiences from './Experiences';
 import Formation from './Formation';
 import ProjetDetail from './projets/ProjetDetail';
 import Projet from './projets/Projet';
-import Projet1 from './projets/Projet1';
-import ProjetFootballPlayerSearch from './projets/ProjetFootballPlayerSearch'; 
+
 
 function App() {
   return (

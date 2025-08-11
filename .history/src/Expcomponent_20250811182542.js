@@ -16,5 +16,5 @@ export default function Expcomponent({ titre, entreprise, date, image, descripti
       <p className="text-sm text-gray-600">{entreprise}</p>
       <p className="text-gray-700 mt-2">{description}</p><br />
     </motion.div>
-  );
+  );  
 }
