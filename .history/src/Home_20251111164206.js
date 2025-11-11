@@ -148,9 +148,9 @@ const Home = () => {
       </section>
 
       <section className="my-20 px-4  text-white ">
-        <h2 className="text-4xl font-bold mb-4 text-center mt-20">Contactez-moi</h2>
+        <h2 className="text-4xl font-bold shadow-md mb-4 text-center mt-20">Contactez-moi</h2>
         <div className="relative top-1/2 w-1/3 mx-auto mb-10 h-0.5 bg-primary transform -translate-y-1/2 z-0 hidden sm:block" />
-        <div className="max-w mx-auto bg-gray-100 p-8 rounded-lg  text-gray-800">
+        <div className="max-w mx-auto bg-gray-100 p-8 rounded-lg shadow-md text-gray-800">
           <form className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md text-gray-800 ">
             <div className="mb-4">
               <label htmlFor="name" className="block text-xl font-medium mb-2">Nom</label>

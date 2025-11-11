@@ -15,14 +15,14 @@ export const projets = [
         titre: 'Football Player Search',
         description: 'une application mobile Android développée avec Kotlin.',
         description_longue: 'une application mobile Android conçue pour offrir une recherche intuitive et rapide d’informations sur les joueurs de football du monde entier.',
-        image: '/Android_project_image.PNG',
+        image: '/Kotlin.PNG',
     },
     {
         id: '3',
         titre: 'Machine Learning - Prédire le Prix de Vente immobilier',
         description: 'Modèle de maching learning conçu pour anticiper les tendances du marché immobilier.',
         description_longue: 'Améliorer la précision des estimations afin d’aider à la prise de décision pour la mise en vente, optimiser les marges, et anticiper les tendances du marché immobilier. Ce projet illustre mes compétences en machine learning, mon savoir-faire en manipulation de données complexes, et ma capacité à transformer des insights en solutions concrètes.',
-        image: '/machinelearning_project.png',
+        image: '/machine_learning.png',
     },
     {
         id: '4',
