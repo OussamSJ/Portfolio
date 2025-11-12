@@ -29,7 +29,7 @@ export const projets = [
         titre: 'GameUP API',
         description: 'API Spring Boot pour la plateforme GamesUP',
         description_longue: 'API Spring Boot pour la plateforme GamesUP, dédiée à la gestion de jeux de société et aux recommandations personnalisées via Machine Learning.',
-        image: '/GameUp-image.png',
+        image: '/images/api.png',
     },
 ];
 
