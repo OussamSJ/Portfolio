@@ -33,7 +33,7 @@ export default function ProjetFootballPlayerSearch() {
                         <p className="text-gray-700 text-2xl p-10 mg-auto">
                             Le code source complet est disponible sur le lien GitHub ci-dessous. Ce projet témoigne de mes <strong>compétences en développement mobile Android</strong>moderne avec Kotlin, de ma capacité à intégrer des APIs REST tierces, et de ma volonté de construire des applications performantes, intuitives et professionnelles.
                         </p>
-                        <p className="text-gray-700 text-2xl font-bold p-10 mb-0 mg-auto">
+                        <p className="text-gray-700 font-bold text-3xl  mg-auto">
                             Lien pour Github :
                         </p>
                         <p className="text-gray-700 text-2xl p-10  mg-auto ">

@@ -33,24 +33,26 @@ export default function ProjetFootballPlayerSearch() {
                         <p className="text-gray-700 text-2xl p-10 mg-auto">
                             Le code source complet est disponible sur le lien GitHub ci-dessous. Ce projet témoigne de mes <strong>compétences en développement mobile Android</strong>moderne avec Kotlin, de ma capacité à intégrer des APIs REST tierces, et de ma volonté de construire des applications performantes, intuitives et professionnelles.
                         </p>
-                        <p className="text-gray-700 text-2xl font-bold p-10 mb-0 mg-auto">
+                        <p className="text-gray-700 font-bold text-3xl  mg-auto">
                             Lien pour Github :
                         </p>
                         <p className="text-gray-700 text-2xl p-10  mg-auto ">
-                            <img
-                                src="/github.svg"
-                                alt="GitHub"
-                                className="w-10 h-10 inline-block mr-2"
-                            />
-                            <a
-                                href="https://github.com/OussamSJ/FootballPlayerSearch"
-                                className="text-blue-500 hover:underline"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                github.com/OussamSJ/FootballPlayerSearch
-                            </a>
-                        </p>
+                            <img src="/github.svg" alt="GitHub" className="w-10 h-10 inline-block" target="_blank" rel="noopener noreferrer"></img><a><Link to="https://github.com/OussamSJ/FootballPlayerSearch" className="text-blue-500 hover:underline">github.com/OussamSJ/FootballPlayerSearch</Link> </a> <br/></p>
+                                        <p className="text-gray-700 text-2xl p-10 mb-20 mg-auto">
+              <img
+                src="/github.svg"
+                alt="GitHub"
+                className="w-10 h-10 inline-block mr-2"
+              />
+              <a
+                href="https://github.com/OussamSJ/FootballPlayerSearch"
+                className="text-blue-500 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/OussamSJ/FootballPlayerSearch
+              </a>
+            </p>
                         <p className="text-gray-700 font-bold text-3xl mb-20 mg-auto">
                             voir les autres projets :
                         </p>

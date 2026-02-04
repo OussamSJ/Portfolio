@@ -9,7 +9,7 @@ export default function ProjetComponent({ id, titre,  image, description, descri
     <img src={image} alt={titre} className="w-full h-40 object-cover rounded-md" />
     <h3 className="text-xl font-bold mt-2">{titre}</h3>
     <p className="text-sm text-gray-600">{description}</p>
-    <Link to={`/projet/${id}`} className="text-[#f1356d] mt-2 inline-block"  onClick={() => window.scrollTo(0, 0)}>
+    <Link to={`/projet/${id}`} className="text-[#f1356d] mt-2 inline-block" target='_self'>
       Voir le projet →
     </Link>
   </div>
