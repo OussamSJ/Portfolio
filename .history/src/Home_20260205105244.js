@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Icon } from "semantic-ui-react";
 
 //import BlogList from "./BlogList";
 import Navbar from "./Navbar";
@@ -7,7 +6,7 @@ import Footbar from "./Footbar";
 import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
 import Services from "./Services";
-//import Processus from "./Processus";
+import Processus from "./Processus";
 import BadgesCertifications from "./Badgescertifications";
 
 
@@ -18,32 +17,6 @@ const Home = () => {
     { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
     { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
   ])
-  const stats = [
-    {
-      nombre: "20+",
-      label: "Projets Réalisés",
-      icon: "folder open",
-      color: "#3b82f6"
-    },
-    {
-      nombre: "3+",
-      label: "Ans d'Expérience",
-      icon: "briefcase",
-      color: "#10b981"
-    },
-    {
-      nombre: "100%",
-      label: "Satisfaction Client",
-      icon: "smile",
-      color: "#f59e0b"
-    },
-    {
-      nombre: "25+",
-      label: "Technologies Maîtrisées",
-      icon: "code",
-      color: "#8b5cf6"
-    }
-  ];
 
   const handleDelete = (id) => {
     const newBlogs = blogs.filter(blog => blog.id !== id);
@@ -97,57 +70,17 @@ const Home = () => {
         <h2 className="text-4xl font-bold mb-4 text-center mt-20 ">À propos de moi</h2>
         <div className="relative top-1/2 w-1/3 mx-auto mb-10 h-0.5 bg-primary transform -translate-y-1/2 z-0 hidden sm:block" />
         <p className="text-xl mb-6">
-          Bonjour, je m'appelle Oussama, développeur passionné par les technologies émergentes,
-          à la recherche de projets innovants où impact et excellence technique se rencontrent.
-          Toujours en veille sur les dernières avancées technologiques, je m’épanouis dans des
-          environnements dynamiques où les défis sont une opportunité d’apprendre, d’innover et
-          de progresser. Je m'investis pleinement dans les projets auxquels je contribue, avec
-          une approche orientée résultats, efficacité et créativité.</p>
-        <p className="text-xl mb-6">
-          Mon objectif est d’apporter des solutions robustes et intelligentes à des problématiques
-          complexes, tout en collaborant avec des équipes ambitieuses et passionnées.</p>
-        <p className="text-xl mb-6">
-          Discutons ensemble si vous recherchez un profil technique curieux, rigoureux et motivé
-          à relever de nouveaux défis.
-        </p>
+          Bonjour, je m'appelle Oussama,  <strong>Développeur passionné par les technologies émergentes</strong>, à la recherche de projets innovants où impact et excellence technique se rencontrent.<br />
+          Toujours en veille sur les dernières avancées <strong>tech</strong>, je m’épanouis dans les environnements dynamiques où les défis techniques sont une opportunité d’apprendre, d’innover et de progresser.
+          Je m'investis pleinement dans les projets auxquels je contribue, avec une approche orientée résultats, efficacité et créativité.<br />
+          Mon objectif : apporter <strong>des solutions robustes et intelligentes</strong> à des problématiques complexes, tout en collaborant avec des équipes ambitieuses et passionnées.
 
+          Discutons ensemble si vous recherchez un profil technique <strong>curieux, rigoureux et motivé à relever de nouveaux défis !</strong>
+        </p>
       </section>
 
-      {/* Statistiques */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-        {stats.map((stat, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
-          >
-            <div
-              className="w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto"
-              style={{ backgroundColor: `${stat.color}20` }}
-            >
-              <Icon
-                name={stat.icon}
-                size="big"
-                style={{ color: stat.color, margin: 0 }}
-              />
-            </div>
-            <h3 className="text-3xl font-bold mb-2" style={{ color: stat.color }}>
-              {stat.nombre}
-            </h3>
-            <p className="text-gray-600 font-semibold">{stat.label}</p>
-          </motion.div>
-        ))}
-      </div>
-
-
-      <Services />
-
-
       <section className="my-20">
-        <h2 className="text-4xl font-bold mb-4 text-center mt-20">Technologies</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center mt-20">Mes Compétences</h2>
         <div className="relative top-1/2 w-1/3 mx-auto mb-10 h-0.5 bg-primary transform -translate-y-1/2 z-0 hidden sm:block" />
 
         <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
@@ -182,8 +115,6 @@ const Home = () => {
           ))}
         </div>
       </section>
-
-      <BadgesCertifications />
 
 
       <section className="my-12 px-4">
@@ -220,8 +151,9 @@ const Home = () => {
             ))}
         </div>
       </section>
-
-      { /*<Processus />*/}
+      <BadgesCertifications />
+      <Services />
+      //<Processus />
 
       {/* Utiliser le nouveau composant ContactForm */}
       <ContactForm />

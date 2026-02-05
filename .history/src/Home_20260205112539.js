@@ -183,8 +183,6 @@ const Home = () => {
         </div>
       </section>
 
-      <BadgesCertifications />
-
 
       <section className="my-12 px-4">
         <h2 className="text-4xl font-bold mb-4 text-center mt-20">Langues</h2>
@@ -220,7 +218,7 @@ const Home = () => {
             ))}
         </div>
       </section>
-
+      <BadgesCertifications />
       { /*<Processus />*/}
 
       {/* Utiliser le nouveau composant ContactForm */}

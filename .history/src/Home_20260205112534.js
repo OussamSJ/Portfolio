@@ -96,20 +96,20 @@ const Home = () => {
       <section className="bg-white text-gray-800 p-8 rounded-lg shadow-md my-8 w-full h-full mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4 text-center mt-20 ">À propos de moi</h2>
         <div className="relative top-1/2 w-1/3 mx-auto mb-10 h-0.5 bg-primary transform -translate-y-1/2 z-0 hidden sm:block" />
-        <p className="text-xl mb-6">
-          Bonjour, je m'appelle Oussama, développeur passionné par les technologies émergentes,
-          à la recherche de projets innovants où impact et excellence technique se rencontrent.
-          Toujours en veille sur les dernières avancées technologiques, je m’épanouis dans des
-          environnements dynamiques où les défis sont une opportunité d’apprendre, d’innover et
-          de progresser. Je m'investis pleinement dans les projets auxquels je contribue, avec
-          une approche orientée résultats, efficacité et créativité.</p>
-        <p className="text-xl mb-6">
-          Mon objectif est d’apporter des solutions robustes et intelligentes à des problématiques
-          complexes, tout en collaborant avec des équipes ambitieuses et passionnées.</p>
-        <p className="text-xl mb-6">
-          Discutons ensemble si vous recherchez un profil technique curieux, rigoureux et motivé
-          à relever de nouveaux défis.
-        </p>
+   <p className="text-xl mb-6">
+  Bonjour, je m'appelle Oussama, développeur passionné par les technologies émergentes,
+  à la recherche de projets innovants où impact et excellence technique se rencontrent.
+  Toujours en veille sur les dernières avancées technologiques, je m’épanouis dans des
+  environnements dynamiques où les défis sont une opportunité d’apprendre, d’innover et
+  de progresser. Je m'investis pleinement dans les projets auxquels je contribue, avec
+  une approche orientée résultats, efficacité et créativité.</p>
+   <p className="text-xl mb-6">
+  Mon objectif est d’apporter des solutions robustes et intelligentes à des problématiques
+  complexes, tout en collaborant avec des équipes ambitieuses et passionnées.</p>
+   <p className="text-xl mb-6">
+  Discutons ensemble si vous recherchez un profil technique curieux, rigoureux et motivé
+  à relever de nouveaux défis.
+</p>
 
       </section>
 
@@ -143,7 +143,7 @@ const Home = () => {
       </div>
 
 
-      <Services />
+    <Services />
 
 
       <section className="my-20">
@@ -183,8 +183,6 @@ const Home = () => {
         </div>
       </section>
 
-      <BadgesCertifications />
-
 
       <section className="my-12 px-4">
         <h2 className="text-4xl font-bold mb-4 text-center mt-20">Langues</h2>
@@ -220,7 +218,7 @@ const Home = () => {
             ))}
         </div>
       </section>
-
+      <BadgesCertifications />
       { /*<Processus />*/}
 
       {/* Utiliser le nouveau composant ContactForm */}

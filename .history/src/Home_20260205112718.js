@@ -183,7 +183,7 @@ const Home = () => {
         </div>
       </section>
 
-      <BadgesCertifications />
+<BadgesCertifications />
 
 
       <section className="my-12 px-4">
@@ -220,7 +220,7 @@ const Home = () => {
             ))}
         </div>
       </section>
-
+      
       { /*<Processus />*/}
 
       {/* Utiliser le nouveau composant ContactForm */}

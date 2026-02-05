@@ -1,4 +1,4 @@
-import { color } from 'framer-motion';
+
 import React, { Component } from 'react';
 import { Menu, MenuItem, MenuMenu, Icon, Sidebar } from 'semantic-ui-react';
 
@@ -145,7 +145,6 @@ class Navbar extends Component {
           }}
           onHide={this.toggleSidebar}
         >
-
 
           {/* Items du menu mobile */}
           <MenuItem as="a" href="/" onClick={this.toggleSidebar} active={activeItem === 'accueil'}>
