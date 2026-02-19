@@ -300,3 +300,66 @@ img-couverture {
 }
 
 
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #3b3737;
+  background: url("/public/background-snow-rain.gif") center center / cover no-repeat fixed;
+}
+
+
+/* Gris clair de base */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d9d9d9; /* gris clair */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Pluie et neige animées */
+body::before, body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Pluie (traits fins gris clair) */
+body::before {
+  background-image: repeating-linear-gradient(
+    120deg,
+    rgba(180,180,180,0.3) 0px,
+    rgba(180,180,180,0.3) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  background-size: 10px 10px;
+  animation: rainMove 1s linear infinite;
+}
+
+/* Neige (petits points blancs) */
+body::after {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: snowMove 10s linear infinite;
+}
+
+@keyframes rainMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
+
+@keyframes snowMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}

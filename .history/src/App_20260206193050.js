@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <div className="App" >
+      <div className="App">
         <div className='content'>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -35,7 +35,40 @@ function App() {
         </div>
       </div>
     </BrowserRouter>
-    
+      {/* Animation globale */}
+      <div className="rain">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className="raindrop"
+            style={{
+              left: `${Math.random() * 100}vw`,
+              animationDuration: `${0.5 + Math.random() * 0.5}s`,
+              height: `${10 + Math.random() * 10}px`,
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="snow">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={i}
+            className="snowflake"
+            style={{
+              left: `${Math.random() * 100}vw`,
+              animationDuration: `${5 + Math.random() * 5}s`,
+              width: `${3 + Math.random() * 5}px`,
+              height: `${3 + Math.random() * 5}px`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Contenu du site */}
+      <div className="site-content">
+        {/* Ton Navbar, Routes, Footer, etc */}
+      </div>
     </>
   );
 }

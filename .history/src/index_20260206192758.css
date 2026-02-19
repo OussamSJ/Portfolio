@@ -300,3 +300,62 @@ img-couverture {
 }
 
 
+/* Container principal */
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ou 100% si tu veux le div */
+  background: #e0e0e0; /* gris clair */
+  overflow: hidden;
+}
+
+/* Pluie */
+.rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.raindrop {
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: rgba(180,180,180,0.6);
+  top: -20px;
+  animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* Neige */
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+  top: -10px;
+  animation: snowFall linear infinite;
+}
+
+@keyframes snowFall {
+  to {
+    transform: translateY(100vh) translateX(20px);
+  }
+}

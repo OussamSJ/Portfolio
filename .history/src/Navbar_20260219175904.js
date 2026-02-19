@@ -277,6 +277,7 @@ class Navbar extends Component {
 
           .sidebar-sub {
             background: rgba(0,0,0,0.15);
+            color: rgba(255,255,255,0.9) !important;
             overflow: hidden;
             max-height: 0;
             transition: max-height 0.3s ease;
@@ -549,7 +550,7 @@ class Navbar extends Component {
                   onClick={this.closeSidebar}
                 >
                   <img src={projet.image} alt={projet.titre} className="sub-img" />
-                  <span className='text-white'>{projet.titre}</span>
+                  <span>{projet.titre}</span>
                   {isCurrent && <span className="sub-active-dot" title="Page actuelle" />}
                 </a>
               );

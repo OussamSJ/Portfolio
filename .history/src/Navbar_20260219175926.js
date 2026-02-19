@@ -549,7 +549,7 @@ class Navbar extends Component {
                   onClick={this.closeSidebar}
                 >
                   <img src={projet.image} alt={projet.titre} className="sub-img" />
-                  <span className='text-white'>{projet.titre}</span>
+                  <span>{projet.titre}</span>
                   {isCurrent && <span className="sub-active-dot" title="Page actuelle" />}
                 </a>
               );

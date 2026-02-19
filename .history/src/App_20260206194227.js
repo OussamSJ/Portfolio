@@ -14,7 +14,11 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <div className="App" >
+      <div className="App" style={{
+    width: '100%',
+    height: '100%',
+    background: 'url("/public/background-snow-rain.gif") center center / cover no-repeat fixed',
+  }}>
         <div className='content'>
           <Routes>
             <Route path="/" element={<Home />} />

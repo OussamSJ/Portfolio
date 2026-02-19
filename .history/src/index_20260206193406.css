@@ -299,4 +299,43 @@ img-couverture {
   transition-duration: 300ms;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 
+  background-color: #e0e0e0; /* gris clair */
+  
+  /* Pluie : traits fins diagonaux */
+  background-image: 
+    repeating-linear-gradient(
+      120deg,
+      rgba(180,180,180,0.3) 0px,
+      rgba(180,180,180,0.3) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    /* Neige : petits points blancs */
+    radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px);
+    
+  background-size: 10px 10px, 20px 20px; /* ajuster taille pattern */
+  background-repeat: repeat, repeat;
+}
+@keyframes bgMove {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 0 100%, 0 50%; }
+}
+
+body {
+  animation: bgMove 10s linear infinite;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/background-snow-rain.gif") center center / cover no-repeat;
+}
