@@ -72,7 +72,7 @@ class Navbar extends Component {
             align-items: stretch;
           }
 
-  /* Même rendu qu'un MenuItem Semantic UI secondary */
+         /* Reproduit exactement le rendu d'un MenuItem Semantic UI secondary */
           .projet-menu-item {
             display: inline-flex;
             align-items: center;
@@ -85,21 +85,22 @@ class Navbar extends Component {
             line-height: 1;
             border: none;
             background: none;
-            transition: color .1s ease, background .1s ease;
+            transition: color .1s ease;
             white-space: nowrap;
-            border-radius: .28571429rem;
+            border-radius: 0;
             gap: 6px;
           }
 
           .projet-menu-item:hover {
             color: rgba(0,0,0,.95);
+            border-radius: 6px;
             background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)) center / 90% 75% no-repeat;
           }
 
           .projet-menu-item.active {
-            color: #f1356d;
+            color: rgba(0,0,0,.95);
+             background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)) center / 90% 75% no-repeat;
             font-weight: 700;
-            border-bottom: 2px solid #f1356d;
           }
 
           .projet-label {
@@ -113,6 +114,7 @@ class Navbar extends Component {
             background: rgba(0,0,0,0.18);
             flex-shrink: 0;
           }
+
 
           .projet-caret {
             font-size: 0.58em;
@@ -361,7 +363,13 @@ class Navbar extends Component {
                 className="dropdown-container"
                 ref={el => this.dropdownRef = el}
               >
-                <div className={`projet-menu-item${isProjetsActive ? ' active' : ''}`}>
+                <MenuItem
+                  name='projets'
+                  active={isProjetsActive}
+                  as="div"
+                  style={{ padding: 0 }}
+                >
+                  <div className={`projet-menu-item${isProjetsActive ? ' active' : ''}`}>
                     <a
                       href="/projet"
                       className="projet-label"
@@ -389,7 +397,8 @@ class Navbar extends Component {
                     >
                       ▼
                     </span>
-                </div>
+                  </div>
+                </MenuItem>
 
                 {projetDropdownOpen && (
                   <div className="dropdown-panel" role="menu">

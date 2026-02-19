@@ -72,7 +72,7 @@ class Navbar extends Component {
             align-items: stretch;
           }
 
-  /* Même rendu qu'un MenuItem Semantic UI secondary */
+          /* Même rendu qu'un MenuItem Semantic UI secondary */
           .projet-menu-item {
             display: inline-flex;
             align-items: center;
@@ -97,9 +97,9 @@ class Navbar extends Component {
           }
 
           .projet-menu-item.active {
-            color: #f1356d;
+            color: rgba(0,0,0,.95);
             font-weight: 700;
-            border-bottom: 2px solid #f1356d;
+            background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)) center / 90% 75% no-repeat;
           }
 
           .projet-label {
@@ -542,7 +542,7 @@ class Navbar extends Component {
                   onClick={this.closeSidebar}
                 >
                   <img src={projet.image} alt={projet.titre} className="sub-img" />
-                  <span className='text-white'>{projet.titre}</span>
+                  <span>{projet.titre}</span>
                   {isCurrent && <span className="sub-active-dot" title="Page actuelle" />}
                 </a>
               );
