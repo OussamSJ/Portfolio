@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #3b3737;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #212020;
+
+}
+
+.navbar h1 {
+  color: #f1356d;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar img {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  object-fit: cover;
+  /* remplit et rogne si besoin */
+  border-radius: 50%;
+  /* transforme le carré en cercle */
+  display: block;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+
+
+/* Responsive: cache les liens sur mobile */
+.desktop-only {
+  display: flex;
+}
+
+
+.mobile-toggle {
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Responsive behavior */
+/* Masque le menu desktop sur petits écrans */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    display: block !important;
+    cursor: pointer;
+  }
+}
+
+
+.content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+.couverture {
+  background-image:
+    url("/public/couverture-portfolio.png");
+  background-size: cover;
+  /* couvre tout le conteneur sans déformation */
+  background-position: center;
+  /* centre l’image */
+  background-repeat: no-repeat;
+  /* pas de répétition */
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  /* une police géométrique, proche de celle utilisée */
+  
+}
+@keyframes crtVerticalShake {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-6px); }
+  40% { transform: translateY(5px); }
+  60% { transform: translateY(-1px); }
+  80% { transform: translateY(4px); }
+  100% { transform: translateY(0); }
+}
+
+.couverture::before,
+.couverture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+}
+
+
+.couverture::before {
+  clip-path: inset(0 40% 0 40%);
+  animation: crtVerticalShake 0.18s steps(1) infinite;
+  opacity: 0.8;
+}
+
+.couverture::after {
+  clip-path: inset(0 5% 0 5%);
+  animation: crtVerticalShake 0.12s steps(1) infinite reverse;
+  opacity: 0.5;
+}
+
+
+
+
+
+.couverture h1 {
+  margin-top: 20px auto;
+  margin-right: 50px;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  text-align: right;
+  font-family: 'Agrandir Grand', sans-serif;
+  /* une police futuriste */
+}
+
+
+.portfolio-footer {
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #212020;
+}
+
+.card-title {
+  margin-bottom: 20px;
+
+  padding: 0;
+  font-size: 1.2rem;
+
+}
+
+.social-links a {
+  list-style: none;
+  all: unset;
+  color: inherit;
+  text-decoration: none;
+  margin-left: auto;
+  text-align: left;
+
+}
+
+.social-links img {
+  width: 40%;
+  height: 40%;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+.social-links a:hover {
+  color: #f1356d;
+}
+
+.footer-bottom {
+  display: block;
+  text-align: center;
+}
+
+ul li {
+  text-align: left;
+
+}
+
+
+
+.not-found {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+  margin-top: 200px;
+  font-size: 3rem;
+}
+
+
+img-couverture {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  object-fit: fill;
+  /* Remplit l'élément sans déformation */
+  border-radius: 50%;
+  /* Transforme le carré en cercle */
+  display: flex;
+}
+
+/* Amélioration des styles pour le Navbar */
+
+/* Style pour l'item actif dans le menu desktop */
+.navbar .links .ui.menu .item.active {
+  color: #f1356d !important;
+  font-weight: bold;
+  border-bottom: 3px solid #f1356d;
+}
+
+/* Hover sur les items du menu desktop */
+.navbar .links .ui.menu .item:hover {
+  color: #f1356d !important;
+  transition: color 0.3s ease;
+}
+
+/* Style du sidebar mobile - override de Semantic UI */
+.ui.sidebar.menu .item {
+  transition: all 0.3s ease;
+}
+.ui.sidebar.menu .item.item.active {
+
+  border-left: 4px solid #f1356d !important;
+}
+
+.ui.sidebar.menu .item:hover {
+  background-color: rgba(241, 53, 109, 0.1) !important;
+}
+
+/* Animation de l'overlay */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sidebar-overlay {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Amélioration du bouton hamburger */
+.mobile-toggle {
+  color: #3b3737;
+  transition: transform 0.3s ease;
+}
+
+.mobile-toggle:hover {
+  transform: scale(1.1);
+  color: #f1356d;
+}
+
+/* Responsive - s'assurer que le toggle est visible uniquement sur mobile */
+@media (min-width: 769px) {
+  .mobile-toggle {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-toggle {
+    display: block !important;
+  }
+}
+
+/* Animation pulse pour le badge disponibilité */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Amélioration des transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
