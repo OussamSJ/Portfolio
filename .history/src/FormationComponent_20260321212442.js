@@ -11,7 +11,7 @@ export default function FormationComponent({ titre, ecole, date, image, index })
       `}
       initial={{ opacity: 0, x: isRight ? -30 : 30 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ delay: index * 1.5, duration: 1, ease: "easeOut" }}
+      transition={{ delay: index * 1.5, duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
     >
       <div className={`absolute top-0 left-1/2 right-1/2 w-6 h-6 bg-white rounded-full border-2 transform -translate-x-1/2 border-primary hidden sm:block`} />

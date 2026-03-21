@@ -11,7 +11,7 @@ const experiences = [
     entreprise: "Mission freelance",
     date: "Décembre 2025 - Mars 2026",
     image: "java-spring-logo.png",
-    description: "Conception et développement d’un mini PMS avec intégration POS et borne via API. Automatisation des processus métier et synchronisation des données (réduction des erreurs, gain de temps). Optimisation des performances pour augmenter la productivité des utilisateurs.",
+    description: "Conception et développement d’un mini PMS avec intégration POS via API. Automatisation des processus métier et synchronisation des données (réduction des erreurs, gain de temps). Optimisation des performances et amélioration de l’UI/UX pour augmenter la productivité des utilisateurs.",
   },
   {
     titre: "Développeur - Intégrateur d’applications en alternance",

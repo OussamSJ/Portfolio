@@ -46,7 +46,7 @@ const Footbar = () => {
 
       </footer>
       <div className="footer-bottom">
-      <p>© 2026 OSJ Developer <br /> Tous droits réservés.</p>
+      <p>© 2026 Oussama SEYID JEBARI <br /> Tous droits réservés.</p>
       </div>
 
     </div>

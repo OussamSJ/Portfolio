@@ -4,9 +4,9 @@ export default function Expcomponent({ titre, entreprise, date, image, descripti
   return (
     <motion.div
       className="relative pl-10 border-l-2 border-primary mb-10"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.40, duration: 0.6, ease: "easeOut" }}
+      initial={{ opacity: 0, x: -30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ delay: index * 0.5, duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
     >
       <div className="absolute -left-3 top-0 w-6 h-6 bg-white rounded-full border-4 border-primary shadow" />
